@@ -37,6 +37,7 @@ HearMeOut operates as an Android system service. You need to register HearMeOut 
 
 5. Flash AOSP to your smartphone
 - Follow the official AOSP guide: https://source.android.com/setup/build/running
+- When you build the AOSP, you have to add proprietary-binaries:https://source.android.com/setup/build/downloading#obtaining-proprietary-binaries
 
 # HearMeOut evaluation method
 Follow the instruction on [Evaluation](Evaluation/README.md)
