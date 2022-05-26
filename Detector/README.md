@@ -65,5 +65,6 @@ setenforce 0
 
 Option 2 - Add system service in the Android build configuration
 - Add Detector as a system service in the Android build process
-- Refer to the links to make a new system policy: https://source.android.com/security/selinux/implement, https://source.android.com/security/selinux/customize#android-o, https://source.android.google.cn/security/selinux/device-policy?hl=ko
+- Activate the system service using the following information. The name of the system service is phishing_detector: https://source.android.google.cn/security/selinux/device-policy#label_new_services_and_address_denials
+- Also the following information will help you to enable system service: https://source.android.com/security/selinux/implement, https://source.android.com/security/selinux/customize#android-o, https://source.android.google.cn/security/selinux/device-policy
 - Detector system service name: phishing_detector
