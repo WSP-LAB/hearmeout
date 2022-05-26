@@ -42,8 +42,7 @@ public static final String PHISHING_DETECTOR = "phishing_detector";
 ```
 
 # Config the Android framework build
-There are two options to make AOSP using permissive mode, you can choose one of the two options to proceed.
-We highly recommend to use option 1.
+There are two options to make AOSP using the permissive mode, you can choose one of the two options to proceed. We highly recommend using option 1.
 
 1. Option 1 - User permissive mode for SElinux 
 - We explain based on Android 8.1 Pixel 2 device. If you are using a different environment, use option 2.
@@ -64,7 +63,7 @@ setenforce 0
 - Check your permissive mode on the device using "adb shell getenforce", after build the AOSP
 
 
-2. Option 2 - Add system service in the Android build configuration
+Option 2 - Add system service in the Android build configuration
 - Add Detector as a system service in the Android build process
-- Refer the links to make new system policy: https://source.android.com/security/selinux/implement, https://source.android.com/security/selinux/customize#android-o, https://source.android.google.cn/security/selinux/device-policy?hl=ko
+- Refer to the links to make a new system policy: https://source.android.com/security/selinux/implement, https://source.android.com/security/selinux/customize#android-o, https://source.android.google.cn/security/selinux/device-policy?hl=ko
 - Detector system service name: phishing_detector
