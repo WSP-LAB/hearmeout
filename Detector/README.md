@@ -48,18 +48,18 @@ We highly recommend to use option 1.
 1. Option 1 - User permissive mode for SElinux 
 - We explain based on Android 8.1 Pixel 2 device. If you are using a different environment, use option 2.
 - Add follow line to device/google/wahoo/BoardConfig.mk
-'''
+```
 androidboot.selinux=permissive
-'''
+```
 - Add follow line to device/google/wahoo/BoardConfig.mk
-'''
+```
 androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-'''
+```
 - Add follow line to system/core/rootdir/init.rc below the line "on init"
-'''
+```
 setenforce 0
-'''
+```
 - After modifying the command line, perform make clean, then make bootimage, and flash the new boot image.
 - Check your permissive mode on the device using "adb shell getenforce", after build the AOSP
 
